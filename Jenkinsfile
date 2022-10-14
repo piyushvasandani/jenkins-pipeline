@@ -6,7 +6,7 @@ pipeline {
     parameters{
         string(name:'person',defaultValue:'piyush kumar',description: "whoa are you?")
         booleanParam(name: 'isMale', defaultValue:true, description:"")
-        choice(name: 'City', choices: ['jaipur','mumbai','agra'], description: "")
+        choice(name: 'City', choices: ['jaipur','Nainital','agra','alwar'], description: "")
     }
     stages {
         stage('Run a command') {
@@ -33,7 +33,7 @@ pipeline {
                 ok "yes we should"
             }
             steps {
-                echo 'deploy on prod'
+                echo 'This stage is continue'
             }
         }
         stage('Deploy on prod') {
