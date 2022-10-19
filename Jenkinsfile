@@ -4,9 +4,7 @@ pipeline {
         name='piyush'
     }
     parameters{
-        string(name:'person',defaultValue:'piyush kumar',description: "whoa are you?")
-        booleanParam(name: 'isMale', defaultValue:true, description:"")
-        choice(name: 'City', choices: ['jaipur','mumbai','agra'], description: "")
+        string(name:'Branch',defaultValue:'main',description: "which branch should be build")
     }
     stages {
         stage('Run a command') {
