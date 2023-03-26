@@ -1,0 +1,3 @@
+This file is in newbranch 
+you can see it in this branch only 
+i won't merge this branch to master
