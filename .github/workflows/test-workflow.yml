@@ -23,5 +23,5 @@ jobs:
         
       - name: write the value of set variable
         run: |
-          echo "${{ steps.test-step.my_output }}"
+          echo "${{ steps.test-step.outputs.my_output }}"
       
