@@ -19,3 +19,9 @@ jobs:
         id: test-step
         run: |
           echo "Hello worlds"
+          echo "my_output=Hello, World!" >> $GITHUB_OUTPUT
+        
+      - name: write the value of set variable
+        run: |
+          echo "${{ steps.test-step.my_output }}"
+      
