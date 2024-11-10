@@ -2,14 +2,14 @@ name: practice/test
 run-name: practice/test
 on:
   workflow_dispatch:
-  inputs:
-    StackName:
-      type: choice
-      description: Practice StackName
-      options:
-        - pr1-staging-stack
-        - pr1-staging stack-2
-        - pr1-staging-backup
+    inputs:
+      StackName:
+        type: choice
+        description: Practice StackName
+        options:
+          - pr1-staging-stack
+          - pr1-staging stack-2
+          - pr1-staging-backup
 
 jobs:
   setup-job-environment:
@@ -19,4 +19,3 @@ jobs:
         id: test-step
         run: |
           echo "Hello worlds"
-
